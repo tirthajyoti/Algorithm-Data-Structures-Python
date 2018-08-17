@@ -1,2 +1,6 @@
 # Data_Structures_Python
-Various useful data structures in Python
+* Stack
+* Queue
+* Binary Search Tree
+* Graph (directed)
+* Graph (undirected)
