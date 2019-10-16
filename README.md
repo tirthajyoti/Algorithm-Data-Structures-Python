@@ -1,11 +1,14 @@
-# Algorithm-Data-Structures-Python
-## Various useful data structures in Python
+# Algorithms and Data Structures with Python
+
+## Building useful data structures in Python
+* Linked List
 * Queue
 * Stack
 * Trees
 * Graph
 
-## Fundamental algorithms
+## Coding fundamentally important algorithms
+* Binary search
 * Bubble sort
 * Insertion sort
 * Selection sort
