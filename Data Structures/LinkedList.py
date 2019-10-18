@@ -1,14 +1,15 @@
-# Linked List in Python
-
 class Node(object):
+    """
+    The basic node class storing a value and a 'next' pointer to the next node
+    """
     def __init__(self, value):
         self.value = value
         self.next = None
-
-#=====================================
-
+        
 class LinkedList(object):
-    
+    """
+    The linked list class
+    """
     def __init__(self, head=None):
         self.head = head
     
@@ -61,3 +62,40 @@ class LinkedList(object):
             return deleted_element
         else:
             return None
+    
+    def delete_tail(self):
+        """
+        Deletes a node from the end of the list
+        """
+        temp = self.head
+        if self.head != None:
+            if self.head.next is None:  # if Head is the only Node in the Linked List
+                self.head = None
+            else:
+                while temp.next.next is not None:  # find the 2nd last element
+                    temp = temp.next
+                temp.next, temp = (
+                    None,
+                    temp.next,
+                )  # (2nd last element).next = None and temp = last element
+        return temp
+    
+    def isEmpty(self):
+        """
+        Returns a Boolean after checking whether the list is empty
+        """
+        return self.head is None  # Return if Head is none
+    
+    def length(self):
+        """
+        Returns the length of the list
+        """
+        ln = 0
+        if not self.isEmpty():
+            ln+=1
+        current = self.head
+        if self.head:
+            while current.next:
+                current = current.next
+                ln+=1
+        return ln
