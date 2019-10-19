@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 Created on Wed Jan 24 19:21:12 2018
 @author: Tirtha
