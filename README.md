@@ -1,4 +1,4 @@
-# Popular algorithms and useful data Structures with Python
+# Popular algorithms and useful data Structures in Python
 
 ## Building useful data structures in Python
 * Linked List
